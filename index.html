@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="share_on_whatsapp">
+        share
+    </button>
+</body>
+<script>
+    const message = "hellloooo how you doin...?";
+
+    document.getElementById('share_on_whatsapp').addEventListener("click" , ()=> {
+        let whatsappUrl = "whatsapp://send?text="+encodeURIComponent(message);
+        window.location.href = whatsappUrl;
+    });
+</script>
+</html>
